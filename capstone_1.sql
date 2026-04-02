@@ -8,7 +8,7 @@ from tutorial.flights
 where departure_delay >30;                                                                                                       --departure delay is more than 30 mintues
 
 --Q2: count the number of flights per destination city.sort the result by highest flight count first ?
-select destination_city,count(*) as flight_count                                                                                 --selecting destination_city and counting flights and giving alias name
+select destination_city,count(*) as flight_count                                                                                  --selecting destination_city and counting flights and giving alias name
 from tutorial.flights
 group by destination_city                                                                                                         --grouping by destination_city
 order by flight_count desc;                                                                                                       --sorting by flight_count in descending order
