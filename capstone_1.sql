@@ -16,7 +16,7 @@ order by flight_count desc;                                                     
 --Q3: Find the flights that arrived early (arrival delay <0) ?
 select *                                                                                                                           --selecting multiple columns
 from tutorial.flights
-where arrival_delay <0;                                                                                                            --arrival_delay is greater than 0
+where arrival_delay <0;                                                                                                             --arrival_delay is greater than 0
 
 --Q4: calculate the average flight distance ?
 select avg(distance) as average_flight_distance                                                                                      --selecting average distance and giving alias name
