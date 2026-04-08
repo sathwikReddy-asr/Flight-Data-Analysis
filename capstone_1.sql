@@ -5,7 +5,7 @@
 --Q1: List all flights with a departure delay greater than 30 mintutes ?
 select *                                                                                                                         --selecting multile columns
 from tutorial.flights 
-where departure_delay >30;                                                                                                       --departure delay is more than 30 mintues
+where departure_delay >30;                                                                                                        --departure delay is more than 30 mintues
 
 --Q2: count the number of flights per destination city.sort the result by highest flight count first ?
 select destination_city,count(*) as flight_count                                                                                  --selecting destination_city and counting flights and giving alias name
