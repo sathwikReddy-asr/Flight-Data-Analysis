@@ -17,7 +17,7 @@ from tutorial.crunchbase_companies
 where founded_year<2015 and (funding_total_usd >=1000000 or founded_year >2009);                       --companies founded before 2015 and received funding atleast 1Mn after 2009
 
 --Q4:	Find the list of all the companies that has funding between 3 to 6 rounds ?
-select *                                                                                              --selecting all columns
+select *                                                                                                --selecting all columns
 from tutorial.crunchbase_companies 
 where funding_rounds between 3 and 6;                                                                 --companies has funding rounda between 3 and 6
 
