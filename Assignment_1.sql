@@ -7,9 +7,9 @@ select distinct (country_code) as unique_country_code                           
 from tutorial.crunchbase_companies;
 
 --Q2: Find the list of all the companies funded on or after 2009 ?
-select *                                                                                               --selecting all columns
+select *                                                                                                --selecting all columns
 from tutorial.crunchbase_companies 
-where founded_year>=2009;                                                                              --companies founded on and after 2009
+where founded_year>=2009;                                                                                --companies founded on and after 2009
 
 --Q3 : Find the list of all the companies founded before 2015 and have received funding of at least 1 Mn USD or after 2009 ?
 select *                                                                                               --selecting all columns
