@@ -11,11 +11,11 @@ select max(sat_writing) as max_marks_in_sat_writing                             
 from tutorial.sat_scores;
 
 --Q3: Find the count of students in the dataset ?
-select count(*) as count_of_students                                                            --counting all students and giving alias name
+select count(*) as count_of_students                                                           --counting all students and giving alias name
 from tutorial.sat_scores;
 
 --Q4: Find the average marks in sat_math in the dataset ?
-select avg(sat_math) as average_marks_in_sat_math                                                --selecting sat_math column and giving alias name and average marks
+select avg(sat_math) as average_marks_in_sat_math                                               --selecting sat_math column and giving alias name and average marks
 from tutorial.sat_scores;
 
 --Q5: Find the sum of hrs_studied in the dataset ?
