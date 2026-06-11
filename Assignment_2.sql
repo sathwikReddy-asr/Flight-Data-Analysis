@@ -7,11 +7,11 @@ select min(sat_verbal) as min_marks_in_sat_verbal                               
 from tutorial.sat_scores;
 
 --Q2: Find the maximum marks in sat_writing in the dataset ?
-select max(sat_writing) as max_marks_in_sat_writing                                            --selecting sat_writing column and giving alias name and maximum marks 
+select max(sat_writing) as max_marks_in_sat_writing                                             --selecting sat_writing column and giving alias name and maximum marks 
 from tutorial.sat_scores;
 
 --Q3: Find the count of students in the dataset ?
-select count(*) as count_of_students                                                           --counting all students and giving alias name
+select count(*) as count_of_students                                                            --counting all students and giving alias name
 from tutorial.sat_scores;
 
 --Q4: Find the average marks in sat_math in the dataset ?
