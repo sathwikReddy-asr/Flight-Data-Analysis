@@ -3,10 +3,10 @@
 --Date:17 jun 2025
 
 --Q1: Write a query to display all the records in the table tutorial.oscar_nominees ?
-select * from tutorial.oscar_nominees;                                                                                                         --selecting all records from table                   
+select * from tutorial.oscar_nominees;                                                                                                        --selecting all records from table                   
 
 --Q2: Write a query to find the distinct values in the ‘year’ column ?
-select distinct (year) as distinct_values                                                                                                     --selecting unique years and giving alias name
+select distinct (year) as distinct_values                                                                                                      --selecting unique years and giving alias name
 from tutorial.oscar_nominees;
 
 --Q3: Write a query to filter the records from year 1999 to year 2006 ?
