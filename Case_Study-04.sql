@@ -4,15 +4,15 @@
 
 --Q1: Write a query to return player_name, school_name, position, conference from the above dataset ?
 select a.player_name,a.school_name,a.position,b.conference                                     --selecting multiple columns from two tables
-from benn.college_football_players as a                                                        --giving alias name,table 1
+from benn.college_football_players as a                                                         --giving alias name,table 1
 join benn.college_football_teams as b                                                          -- joining the table and giving alias name,table 2
 on a.school_name=b.school_name;                                                                --giving similar columns in both tables to perform join
 
 --Q2: Write a query to find the total number of players playing in each conference.Order the output in the descending order of number of players ?
-select b.conference,count(*) as total_players                                                   --selecting a column from table 2 and counting all records and giving alias name
-from benn.college_football_players as a                                                         --giving alias name,table 1
+select b.conference,count(*) as total_players                                                    --selecting a column from table 2 and counting all records and giving alias name
+from benn.college_football_players as a                                                          --giving alias name,table 1
 join benn.college_football_teams as b                                                            --joining the table and giving alias name,table 2
-on a.school_name=b.school_name                                                                  --giving similar columns in both tables to perform join
+on a.school_name=b.school_name                                                                   --giving similar columns in both tables to perform join
 group by 1                                                                                        --grouping the data by conference 
 order by total_players desc;                                                                      --sorting the data in descending order
 
