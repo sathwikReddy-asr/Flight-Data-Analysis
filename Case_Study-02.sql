@@ -3,11 +3,11 @@
 --Date:20-06-2025
 
 --Q1: Write a query to count the total number of records in the tutorial.kag_conversion_data dataset ?
-select count(*) as total_records                                                                                                          --counting all records and giving alias name
+select count(*) as total_records                                                                                                           --counting all records and giving alias name
 from tutorial.kag_conversion_data;
 
 --Q2: Write a query to count the distinct number of fb_campaign_id ?
-select count(distinct(fb_campaign_id)) as count_of_unique_fb_campaign_id                                                                  --selecting and counting unique fb_campaign_id and giving alias name
+select count(distinct(fb_campaign_id)) as count_of_unique_fb_campaign_id                                                                   --selecting and counting unique fb_campaign_id and giving alias name
 from tutorial.kag_conversion_data;
 
 --Q3: Write a query to find the maximum spent, average interest, minimum impressions for ad_id ?
