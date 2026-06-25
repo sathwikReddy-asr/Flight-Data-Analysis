@@ -58,8 +58,8 @@ on a.product_id=b.product_id                                                    
 group by 1,a.price_unit;                                                                                                                                                                  --grouping the data by product type and unit price
 
 --Q8: Find the product-wise sales for product_type =’dairy’ ?
-select a.product_name,a.product_id,a.price_unit*count(b.transaction_id) as total_sales                   --selecting multiple columns from table 1 and creating the new column and giving alias name
-from tutorial.excel_sql_inventory_data as a                                                              --giving alias name,table 1
+select a.product_name,a.product_id,a.price_unit*count(b.transaction_id) as total_sales                    --selecting multiple columns from table 1 and creating the new column and giving alias name
+from tutorial.excel_sql_inventory_data as a                                                               --giving alias name,table 1
 left join tutorial.excel_sql_transaction_data as b                                                       --joining(left join) the table and giving alias name,table 2
 on a.product_id=b.product_id                                                                             --giving similar columns in both tables to perform join
 where a.product_type='dairy'                                                                             --checking condition for product  type is equal to dairy
