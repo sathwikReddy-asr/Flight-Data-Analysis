@@ -6,7 +6,7 @@
 select * from tutorial.oscar_nominees;                                                                                                        --selecting all records from table                   
 
 --Q2: Write a query to find the distinct values in the ‘year’ column ?
-select distinct (year) as distinct_values                                                                                                      --selecting unique years and giving alias name
+select distinct (year) as distinct_values                                                                                                     --selecting unique years and giving alias name
 from tutorial.oscar_nominees;
 
 --Q3: Write a query to filter the records from year 1999 to year 2006 ?
@@ -15,7 +15,7 @@ from tutorial.oscar_nominees
 where year between 1999 and 2006;                                                                                                            --years  between 1999 and 2006
 
 --Q4: Write a query to filter the records for either year 1991 or 1998 ?
-select *                                                                                                                                   --selecting all records from table  
+select *                                                                                                                                    --selecting all records from table  
 from tutorial.oscar_nominees 
 where year =1991 or year=1998;                                                                                                              --year is 1991 or 1998
 
