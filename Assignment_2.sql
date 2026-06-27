@@ -3,7 +3,7 @@
 --Date:14-06-2025
 
 --Q1: Find the minimum marks in sat_verbal in the dataset ?
-select min(sat_verbal) as min_marks_in_sat_verbal                                              --selecting sat_verbal column and giving alias name and minimum marks
+select min(sat_verbal) as min_marks_in_sat_verbal                                                --selecting sat_verbal column and giving alias name and minimum marks
 from tutorial.sat_scores;
 
 --Q2: Find the maximum marks in sat_writing in the dataset ?
