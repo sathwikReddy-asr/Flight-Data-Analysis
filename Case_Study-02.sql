@@ -11,7 +11,7 @@ select count(distinct(fb_campaign_id)) as count_of_unique_fb_campaign_id        
 from tutorial.kag_conversion_data;
 
 --Q3: Write a query to find the maximum spent, average interest, minimum impressions for ad_id ?
-select max(spent) as maximum_spent,avg(interest) as average_interest,min(impressions) as minimum_impression                               --selecting maximum spent and average interest and minimum impressions and giving alias names
+select max(spent) as maximum_spent,avg(interest) as average_interest,min(impressions) as minimum_impression                                 --selecting maximum spent and average interest and minimum impressions and giving alias names
 from tutorial.kag_conversion_data;
 
 --Q4: Write a query to create an additional column spent per impressions(spent/impressions) ?
