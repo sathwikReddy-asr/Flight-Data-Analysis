@@ -3,9 +3,9 @@
 --Date:24-06-2025
 
 --Q1: Find the top 5 countries(country code) with the highest number of operating companies. Ensure the country code is not null ?
-select country_code,count(*) as total_count                                                                                --selecting a column and counting all records in data and giving alias name 
+select country_code,count(*) as total_count                                                                                 --selecting a column and counting all records in data and giving alias name 
 from tutorial.crunchbase_companies 
-where status='operating' and country_code is not null                                                                       --checking condition for status is equal to operating and country_code is not null
+where status='operating' and country_code is not null                                                                        --checking condition for status is equal to operating and country_code is not null
 group by 1                                                                                                                   --grouping by country_code
 order by total_count desc                                                                                                    --sorting the output in descending order
 limit 5;                                                                                                                      --limiting the output for 5 rows
