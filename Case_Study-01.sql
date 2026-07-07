@@ -31,7 +31,7 @@ where year=1997 and winner=true;                                                
 --Q6: Write a query to return the winner in the ‘actor in a leading role’ and ‘actress in a leading role’ category for the year of 1994,1980, and 2008 ?
 select year,category,nominee                                                                                                                     --selecting year,category and nominee columns from table
 from tutorial.oscar_nominees 
-where year in (1994,1980,2008) and category in ('actor in a leading role','actress in a leading role') and winner=True;                         --checking conditions for winner is true and using in clause for years 1994,1980 and 2008 and for 'actor in a leading role','actress in a leading role' 
+where year in (1994,1980,2008) and category in ('actor in a leading role','actress in a leading role') and winner=True;                          --checking conditions for winner is true and using in clause for years 1994,1980 and 2008 and for 'actor in a leading role','actress in a leading role' 
 
 --Q7: Write a query to return the name of the movie starting from letter ‘A’ ?
 select movie                                                                                                                                     --selecting movie column from table
@@ -41,7 +41,7 @@ where movie like 'A%';                                                          
 --Q8: Write a query to return the name of movies containing the word ‘the’ ?
 select movie                                                                                                                                     --selecting movie column from table
 from tutorial.oscar_nominees 
-where movie like '%the%';                                                                                                                       --selecting movie name containing 'the'  
+where movie like '%the%';                                                                                                                        --selecting movie name containing 'the'  
 
 --Q9: Write a query to return all the records where the nominee name starts with “C” and ends with “r” ?
 select nominee                                                                                                                                 --selecting nominee column from table
