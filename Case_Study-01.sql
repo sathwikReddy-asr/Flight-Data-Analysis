@@ -49,6 +49,6 @@ from tutorial.oscar_nominees
 where nominee like 'C%r';                                                                                                                     --selecting nominee name that starts with 'C' and ends with 'r'
 
 --Q10: Write a query to return all the records where the movie was released in 2005 and movie name does not start with ‘a’ and ‘c’ and nominee was a winner ?
-select *                                                                                                                                   --selecting all columns from table
+select *                                                                                                                                     --selecting all columns from table
 from tutorial.oscar_nominees 
 where year=2005 and winner='true'and movie not like 'A%' and movie not like 'C%';                                                           --checking conditions for year iq equal to 2005 and winner is equal to true and movie names not start with 'A' AND 'C'
