@@ -45,7 +45,7 @@ from tutorial.kag_conversion_data
 group by 1,2;                                                                                                                                        --grouping by age and gender columns
 
 --Q10: Write a query to find the top 2 xyz_campaign_id and gender segment with the maximum total_unapproved_conversion ?
-select xyz_campaign_id,gender,approved_conversion,count(*) as total_unapproved_conversion                                                          --selecting multiple columns and counting all records from table
+select xyz_campaign_id,gender,approved_conversion,count(*) as total_unapproved_conversion                                                            --selecting multiple columns and counting all records from table
 from tutorial.kag_conversion_data 
 where approved_conversion=0                                                                                                                         --checking condition for approved_conversion=0
 group by 1,2,3                                                                                                                                       --grouping the data by xyz_campaign_id,gender,approved_conversion
