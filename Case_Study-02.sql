@@ -15,7 +15,7 @@ select max(spent) as maximum_spent,avg(interest) as average_interest,min(impress
 from tutorial.kag_conversion_data;
 
 --Q4: Write a query to create an additional column spent per impressions(spent/impressions) ?
-select * ,spent/impressions as spent_per_impressions                                                                                       --selecting all records from table and creating a new column 
+select * ,spent/impressions as spent_per_impressions                                                                                          --selecting all records from table and creating a new column 
 from tutorial.kag_conversion_data;
 
 --Q5: Write a query to count the ad_campaign for each age group ?
