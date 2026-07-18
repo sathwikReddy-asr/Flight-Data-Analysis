@@ -23,7 +23,7 @@ select age,count(distinct(fb_campaign_id)) as count_of_ad_campaign              
 from tutorial.kag_conversion_data 
 group by 1;                                                                                                                                    --grouping by age column
 --Q6: Write a query to calculate the average spent on ads for each gender category ?
-select gender,avg(spent) as average_spent_on_ads                                                                                               --selecting gender column and average spent and giving alias name
+select gender,avg(spent) as average_spent_on_ads                                                                                                 --selecting gender column and average spent and giving alias name
 from tutorial.kag_conversion_data 
 group by 1;                                                                                                                                       --grouping by gender column
 
