@@ -49,7 +49,7 @@ where school='Petersville HS'
 group by 1;                                                                                      --grouping by teacher column
 
 --Q11: Find the maximum marks scored in sat_math per teacher for the school ‘Washington HS’ ? 
-select teacher, max(sat_math) as max_marks_in_sat_math                                           --selecting teacher column and maximum marks in sat_math and giving alias name
+select teacher, max(sat_math) as max_marks_in_sat_math                                             --selecting teacher column and maximum marks in sat_math and giving alias name
 from tutorial.sat_scores 
 where school='Washington HS'
 group by 1;                                                                                        --grouping by teacher column
