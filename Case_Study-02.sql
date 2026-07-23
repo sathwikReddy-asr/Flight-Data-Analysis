@@ -28,7 +28,7 @@ from tutorial.kag_conversion_data
 group by 1;                                                                                                                                       --grouping by gender column
 
 --Q7: Write a query to find the total approved conversion per xyz campaign id. Arrange the total conversion in descending order ?
-select total_conversion,xyz_campaign_id,sum(approved_conversion) as total_approved_conversion                                                   --selecting multiple columns and sum of approved_conversion and giving alias name
+select total_conversion,xyz_campaign_id,sum(approved_conversion) as total_approved_conversion                                                     --selecting multiple columns and sum of approved_conversion and giving alias name
 from tutorial.kag_conversion_data
 group by 1,2                                                                                                                                      --grouping by total_conversion and xyz_campaign_id columns
 order by 1 desc;                                                                                                                                   --sorting the output in descending order
