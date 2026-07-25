@@ -17,7 +17,7 @@ where year between 1999 and 2006;                                               
 --Q4: Write a query to filter the records for either year 1991 or 1998 ?
 select *                                                                                                                                      --selecting all records from table  
 from tutorial.oscar_nominees 
-where year =1991 or year=1998;                                                                                                              --year is 1991 or 1998
+where year =1991 or year=1998;                                                                                                                --year is 1991 or 1998
 
 select *                                                                                                                                     --selecting all records from table  
 from tutorial.oscar_nominees 
