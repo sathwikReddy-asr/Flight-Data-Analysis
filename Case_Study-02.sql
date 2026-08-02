@@ -40,7 +40,7 @@ group by 1                                                                      
 having sum(interest)>300;                                                                                                                          --getting the data after grouping and sum is greater than 300
 
 --Q9: Write a query to find the age and gender segment with maximum impression to interest ratio. Return three columns - age, gender, impression_to_interest ?
-select age,gender,sum(impressions)/sum(interest) as impression_to_interest                                                                         --selecting multiple columns and ratio and giving alias name
+select age,gender,sum(impressions)/sum(interest) as impression_to_interest                                                                           --selecting multiple columns and ratio and giving alias name
 from tutorial.kag_conversion_data 
 group by 1,2;                                                                                                                                        --grouping by age and gender columns
 
