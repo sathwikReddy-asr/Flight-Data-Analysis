@@ -32,7 +32,7 @@ where category_code in ('software','education','analytics') and funding_total_us
 group by 1;                                                                                                                       --grouping by category code
 
 --Q6: Find the city having more than 50 closed companies. Return the city and number of companies closed ?
-select city,count(*) as total_companies_closed                                                                                 --selecting a column and counting all records in table
+select city,count(*) as total_companies_closed                                                                                   --selecting a column and counting all records in table
 from tutorial.crunchbase_companies
 where status='closed'                                                                                                           --checking condition for status is equal to closed
 group by 1                                                                                                                      --grouping the data by city
