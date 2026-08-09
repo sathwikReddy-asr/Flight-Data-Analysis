@@ -34,7 +34,7 @@ group by 1,2                                                                    
 order by 1 desc;                                                                                                                                   --sorting the output in descending order
 
 --Q8: Write a query to show the fb_campaign_id and total interest per fb_campaign_id. Only show the campaign which has more than 300 interests ?
-select fb_campaign_id,sum(interest) as total_interest                                                                                             --selecing fb_campaign_id and sum of interest and giving alias name
+select fb_campaign_id,sum(interest) as total_interest                                                                                               --selecing fb_campaign_id and sum of interest and giving alias name
 from tutorial.kag_conversion_data 
 group by 1                                                                                                                                         --grouping by fb_cmpaign_id
 having sum(interest)>300;                                                                                                                          --getting the data after grouping and sum is greater than 300
