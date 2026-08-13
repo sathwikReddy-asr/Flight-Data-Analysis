@@ -44,7 +44,7 @@ from tutorial.oscar_nominees
 where movie like '%the%';                                                                                                                        --selecting movie name containing 'the'  
 
 --Q9: Write a query to return all the records where the nominee name starts with “C” and ends with “r” ?
-select nominee                                                                                                                                 --selecting nominee column from table
+select nominee                                                                                                                                   --selecting nominee column from table
 from tutorial.oscar_nominees 
 where nominee like 'C%r';                                                                                                                     --selecting nominee name that starts with 'C' and ends with 'r'
 
