@@ -18,7 +18,7 @@ order by total_players desc;                                                    
 
 --Q3: Write a query to find the average height of players per division ?
 select b.division,avg(height) as average_height                                                    --selecting a column from table 2 and average of height and giving alias name
-from benn.college_football_players as a                                                           --giving alias name,table 1
+from benn.college_football_players as a                                                             --giving alias name,table 1
 join benn.college_football_teams as b                                                               --joining the table and giving alias name,table 2
 on a.school_name=b.school_name                                                                      --giving similar columns in both tables to perform join
 group by 1;                                                                                          --grouping the data by division
