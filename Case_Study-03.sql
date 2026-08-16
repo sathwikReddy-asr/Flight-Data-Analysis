@@ -34,8 +34,8 @@ group by 1;                                                                     
 --Q6: Find the city having more than 50 closed companies. Return the city and number of companies closed ?
 select city,count(*) as total_companies_closed                                                                                   --selecting a column and counting all records in table
 from tutorial.crunchbase_companies
-where status='closed'                                                                                                           --checking condition for status is equal to closed
-group by 1                                                                                                                      --grouping the data by city
+where status='closed'                                                                                                            --checking condition for status is equal to closed
+group by 1                                                                                                                       --grouping the data by city
 having count(*)>50;                                                                                                             --getting the data where count is greater than 50
 
 --Q7: Find the number of bio-tech companies who are founded after 2000 and either have more than 1Mn funding or have ipo and secured more than 1 round of funding ?
