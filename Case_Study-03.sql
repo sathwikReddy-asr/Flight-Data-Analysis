@@ -16,7 +16,7 @@ from tutorial.crunchbase_companies
 where country_code is null;                                                                                                     --checking condition for country_code is null
 
 --Q3: Find the number of companies starting with letter ‘g’ founded in France(FRA) and still operational(status = operating) ?
-select count(*) as total_no_of_companies                                                                                       --counting all records in table and giving alias name
+select count(*) as total_no_of_companies                                                                                         --counting all records in table and giving alias name
 from tutorial.crunchbase_companies 
 where name like 'g%' and status='operating' and country_code='FRA';                                                             --checking condition for name starts with g and status is equal to operating and country_code is equal to fra
 
