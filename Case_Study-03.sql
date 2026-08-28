@@ -11,7 +11,7 @@ order by total_count desc                                                       
 limit 5;                                                                                                                      --limiting the output for 5 rows
 
 --Q2: How many companies have no country code available in the dataset ?
-select count(*) as total_companies_with_no_country_code                                                                       --counting all records in table and giving alias name
+select count(*) as total_companies_with_no_country_code                                                                         --counting all records in table and giving alias name
 from tutorial.crunchbase_companies 
 where country_code is null;                                                                                                     --checking condition for country_code is null
 
