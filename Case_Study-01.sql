@@ -24,7 +24,7 @@ from tutorial.oscar_nominees
 where year in (1991,1998);                                                                                                                     --using in clause for year is 1991 (or)1998
 
 --Q5: Write a query to return the winner movie name for the year of 1997 ?
-select movie                                                                                                                                 --selecting movie column from table
+select movie                                                                                                                                   --selecting movie column from table
 from tutorial.oscar_nominees 
 where year=1997 and winner=true;                                                                                                              --checking condition for year is equal to 1997 and winner iis true
 
